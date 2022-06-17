@@ -1,5 +1,4 @@
 <img alt="GIF de uma pessoa escrevendo" title="Easter Egg: Não estou fingindo! 'Pretending' é um falso cognato!" align="right" width="30%" src="https://i.giphy.com/media/56ikf9jD4ZK6s/giphy.webp"/>
-<br>
 <h1 align="center">Você está no repositório: Anotações</h1>
 <div align="center">
  <a href="https://www.linkedin.com/in/carlos25xrm">
