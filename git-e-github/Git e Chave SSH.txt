@@ -1,0 +1,48 @@
+INSTALANDO O GIT NO COMPUTADOR, GERANDO A CHAVE SSH E ADICIONANDO NO GITHUB
+ATUALIZADO EM: 17/06/2022 às 17:20h
+SISTEMA OPERACIONAL: Ubuntu 22.04 LTS
+OBSERVAÇÃO: Instalação do git personalizada para distribuições que utilizam o APT.
+
+0 - INSTALAR E CONFIGURAR O GIT NO COMPUTADOR (Informações do "git log")
+$ sudo apt install git
+$ git config --global user.email "email@gmail.com"
+$ git config --global user.name "Seu Nome"
+
+1 - GERAR CHAVE SSH ATRAVÉS DO E-MAIL DO GITHUB
+$ ssh-keygen -t rsa -b 4096 -C "email@gmail.com"
+> Generating public/private rsa key pair.
+
+2 - DEIXAR EM BRANCO E PRESSIONAR "ENTER" PARA ACEITAR A SUGESTÃO
+> Enter file in which to save the key (/home/user/.ssh/id_rsa):
+> Created directory '/home/user/.ssh'.
+
+3 - ESCOLHER UMA SENHA OU DEIXAR VAZIO + CONFIRMAÇÃO
+> Enter passphrase (empty for no passphrase):
+> Enter same passphrase again:
+> Your identification has been saved in /home/user/.ssh/id_rsa
+> Your public key has been saved in /home/user/.ssh/id_rsa.pub
+
+4 - ADICIONAR CHAVE PRIVADA NO SSH-AGENT
+$ eval $(ssh-agent -s)
+> Agent pid 4694 (Número ao lado é aleatório)
+$ ssh-add ~/.ssh/id_rsa
+> Identity added: /home/user/.ssh/id_rsa (email@gmail.com)
+
+5 - EXIBIR CHAVE PÚBLICA NO TERMINAL
+$ cat ~/.ssh/id_rsa.pub
+
+6 - COPIAR TODO O BLOCO DESDE "ssh-rsa" ATÉ O FINAL DO E-MAIL
+Exemplo: ssh-rsa AAA conteúdo ZZZ== email@gmail.com
+
+7 - NO GITHUB
+- Settings > SSH and GPG keys
+- New SSH key
+- Preencher "Title" e colar a chave
+- Add SSH key
+
+
+= = = = = = = = = = = = = = = = =
+= ATALHO PARA COLAR NO TERMINAL =
+= = = = = = = = = = = = = = = = =
+
+git config --global user.email "email@gmail.com" && git config --global user.name "Meu Nome" && ssh-keygen -t rsa -b 4096 -C "email@gmail.com" && eval $(ssh-agent -s) && ssh-add ~/.ssh/id_rsa && cat ~/.ssh/id_rsa.pub
