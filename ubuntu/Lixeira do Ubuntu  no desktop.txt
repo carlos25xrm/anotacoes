@@ -1,0 +1,8 @@
+ATUALIZADO EM: 17/06/2022 às 17:32h
+SISTEMA OPERACIONAL: Ubuntu 22.04 LTS
+
+Para exibir a lixeira na Área de Trabalho (Desktop):
+gsettings set org.gnome.shell.extensions.ding show-trash true
+
+Para ocultar a lixeira na Área de Trabalho (Desktop):
+gsettings set org.gnome.shell.extensions.ding show-trash false
