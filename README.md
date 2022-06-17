@@ -21,11 +21,11 @@
 
 <h3>➡️ Informações sobre esse repositório:</h3>
 
-- Aqui é o lugar onde guardo materiais para usar como referência. Todo o conteúdo foi escrito usando a minha didática, portanto, pode ser que haja explicações melhores por aí. Se o conteúdo for suficiente para lhe ajudar, fico feliz!
+- Aqui é o lugar onde guardo materiais para usar como referência. Todo o conteúdo foi escrito usando a minha didática, portanto, pode ser que haja explicações melhores por aí. Fico feliz se o conteúdo lhe ajudar!
 - Esse repositório não tem um assunto específico. Você encontrará instruções para serem executadas em sistemas operacionais com kernel Linux, trechos de
   códigos diversos para solucionar problemas, relembrar procedimentos, entre outras coisas.
 - Os conteúdos serão acrescentados aos poucos (Em diversos formatos), podem ser alterados sem prévio aviso e sem nenhuma garantia de que vai funcionar para você. Ainda assim estou feliz por ter um lugar para guardar esse conhecimento!
-- Fique à vontade para estudar comigo e lembre-se: Conhecimento não é crime e todo repositório tem um "easter egg"!
+- Fique à vontade para estudar comigo. Conhecimento não é crime e todo repositório tem um "easter egg"!
 
 <br><br>
 
